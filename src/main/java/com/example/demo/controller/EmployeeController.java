@@ -40,6 +40,6 @@ public class EmployeeController {
     @DeleteMapping("{id}")
     public ResponseEntity<String> DeleteEmployee(@PathVariable long id) {
         employeeService.DeleteEmployee(id);
-        return new ResponseEntity<>("Employee deleted with success", HttpStatus.OK);
+        return new ResponseEntity<>("Success", HttpStatus.OK);
     }
 }
